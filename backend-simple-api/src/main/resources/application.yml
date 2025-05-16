@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres-container:5432/db
+    url: jdbc:postgresql://postgres-db:5432/db
     username: usr
     password: pwd
 
@@ -8,3 +8,4 @@ spring:
     hibernate:
       ddl-auto: none
     show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
